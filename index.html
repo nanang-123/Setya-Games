@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setya Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="#"><img src="logo-removebg-preview.png" alt="Setya Games"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search games, developers, publishers..." id="search-input">
+                    <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-menu">
+                    <a href="#" class="user-link"><i class="fas fa-user"></i> Login</a>
+                    <a href="#" class="cart-link"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Banner Carousel -->
+        <section class="hero-carousel" id="home">
+            <div class="carousel-container">
+                <div class="carousel-slide active" style="background-image: url('cod1.webp');">
+                    <div class="carousel-content">
+                        <h1>Call of Duty: Black Ops 7</h1>
+                        <p>A thrilling Multiplayer experience, and the legendary round-based Zombies mode.</p>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('AB1.jpg');">
+                    <div class="carousel-content">
+                        <h1>Arena Breakout: Infinite</h1>
+                        <p>A high-stakes evacuation-themed tactical shooter where every decision matters.</p>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+
+        <!-- Featured Games Section -->
+        <section class="featured-games">
+            <div class="container">
+                <h2>Recommended</h2>
+                <div class="games-grid">
+                    <div class="game-card" data-game-id="1">
+                        <img src="Grand_Theft_Auto_V.jpg" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Grand Theft Auto V</h3>
+                            <p>Developer: Rockstar North</p>
+                            <div class="price">$29.99</div>
+                            <button class="btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="game-card" data-game-id="2">
+                        <img src="Naruto.jpg" alt="Game 2">
+                        <div class="game-info">
+                            <h3>Naruto x Boruto: Ultimate Ninja Storm Connections</h3>
+                            <p>Developer: CyberConnect2 Co., Ltd.</p>
+                            <div class="price">$19.99</div>
+                            <button class="btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Add more game cards as needed for complexity -->
+                    <div class="game-card" data-game-id="3">
+                        <img src="Lego Batman.jpg" alt="Game 3">
+                        <div class="game-info">
+                            <h3>Lego Batman: Legacy of the Dark Knight</h3>
+                            <p>Developer: TT Games</p>
+                            <div class="price">$14.99</div>
+                            <button class="btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="game-card" data-game-id="4">
+                        <img src="AB.jpg" alt="Game 4">
+                        <div class="game-info">
+                            <h3>Arena Breakout: Infinite</h3>
+                            <p>Developer: Insomniac Games, Nixxes Software</p>
+                            <div class="price">$49.99</div>
+                            <button class="btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="game-card" data-game-id="5">
+                        <img src="RE.jpg" alt="Game 5">
+                        <div class="game-info">
+                            <h3>Resident Evil 9: Requiem</h3>
+                            <p>Developer: CAPCOM Co., Ltd.</p>
+                            <div class="price">$9.99</div>
+                            <button class="btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="game-card" data-game-id="6">
+                        <img src="COD.jpg" alt="Game 6">
+                        <div class="game-info">
+                            <h3>Call of Duty: Black Ops 7</h3>
+                            <p>Developer: 
+                                Treyarch, Raven Software, Beenox, High Moon Studios, Sledgehammer Games, Infinity Ward, Activision Shanghai, Demonware</p>
+                            <div class="price">$24.99</div>
+                            <button class="btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <h3>Action</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Adventure</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>RPG</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Strategy</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Simulation</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Sports</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Racing</h3>
+                    </div>
+                    <div class="category-card">
+                        <h3>Indie</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Games Section -->
+        <section class="popular-games">
+            <div class="container">
+                <h2>Popular Games</h2>
+                <div class="games-list">
+                    <div class="game-item">
+                        <img src="COD.jpg" alt="Popular Game 1">
+                        <div class="game-details">
+                            <h3>Call of Duty: Black Ops 7</h3>
+                            <p>High ratings and millions of players.</p>
+                            <div class="rating">5</div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <img src="RE.jpg" alt="Popular Game 2">
+                        <div class="game-details">
+                            <h3>Resident Evil 9: Requiem</h3>
+                            <p>Award-winning title.</p>
+                            <div class="rating">4,5</div>
+                        </div>
+                    </div>
+                    <!-- Add more for complexity -->
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <h3>Game Update Released</h3>
+                        <p>New features and bug fixes.</p>
+                        <a href="#">Read More</a>
+                    </article>
+                    <article class="news-card">
+                        <h3>New Game Announced</h3>
+                        <p>Exciting new title coming soon.</p>
+                        <a href="#">Read More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Detail Modal (Hidden by default) -->
+        <div id="game-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <img id="modal-image" src="" alt="Game Image">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-price" id="modal-price"></div>
+                    <button class="btn-primary" id="modal-buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Sidebar (Hidden by default) -->
+        <div id="cart-sidebar" class="cart-sidebar">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-footer">
+                <div class="total">Total: $<span id="cart-total">0.00</span></div>
+                <button class="btn-primary">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Selebew Aishhhhh!!!!!!!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Setya Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
